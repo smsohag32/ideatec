@@ -292,7 +292,7 @@ tbody tr td{
     text-align: center;
     background:#b0e2ba;
     border-radius: 4px;
-    /* letter-spacing: 0.3px; */
+    letter-spacing: 0.3px;
 }
 .fotter-end .des-ft h5{
     font-size: 14px;
