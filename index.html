@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- css only -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" ></script>
+</head>
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="img/logo2.jpg">
+            <h2>SkyMoon</h2>
+        </div>
+        <div class="item">
+            <li><i class="bi bi-pie-chart-fill"></i><a href="#">Dashboard</a></li>
+            <li><i class="bi bi-list-task"></i><a href="#">Client Review</a></li>
+            <li><i class="bi bi-code-square"></i><a href="#">Add Users</a></li>
+            <li><i class="bi bi-calendar-check-fill"></i><a href="#">Complain Box</a></li>
+            <li><i class="bi bi-currency-dollar"></i><a href="#">Total Bill</a></li>
+            <li><i class="bi bi-person-lines-fill"></i><a href="#">Account</a></li>
+            <li><i class="bi bi-person-lines-fill"></i><a href="#">Assing Team</a></li>
+            <li><i class="bi bi-gear"></i><a href="#">Setting</a></li>
+        </div>
+    </section>
+    
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="bi bi-list"></i>
+                </div>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" id="myInput" placeholder="Search here" onkeyup="searching()">
+                </div>
+            </div>
+            <div class="profile">
+                <i class="bi bi-bell"></i>
+                <img src="img/sohag.png">
+            </div>
+        </div>
+        <h3 class="i-name">
+            Dashboard
+        </h3>
+        <div class="values">
+            <div class="val-box">
+                <i class="bi bi-people"></i>
+                <div>
+                    <h3>89</h3>
+                    <span>New Users</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="bi bi-server"></i>
+                <div>
+                    <h3>1030</h3>
+                    <span>Total Users</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="bi bi-list-task"></i>
+                <div>
+                    <h3>50</h3>
+                    <span>Inactive</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="bi bi-currency-dollar"></i>
+                <div>
+                    <h3>10000</h3>
+                    <span>Total Bill</span>
+                </div>
+            </div>
+        </div>
+        <dir class="board">
+            <table width="100%" id="myTable">
+                <thead>
+                    <tr>
+                        <th>Id</t>
+                        <th>Name</th>
+                        <th>Phone/Address</th>
+                        <th>Zone</th>
+                        <th>Pakage</th>
+                        <th>Status</th>
+                        <th><a href="#">Add User</a>
+                        </th>
+                    </tr>
+                </thead>
+
+                <!-- Client Details Start -->
+                
+                <tbody>
+                    <tr>
+                        <td>
+                            <h5>idea01</h5>
+                        </td>
+                        <td><h5>Sohag</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>idea02</h5>
+                        </td>
+                        <td><h5>Sohag</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>idea03</h5>
+                        </td>
+                        <td><h5>Sohag</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>idea04</h5>
+                        </td>
+                        <td><h5>Sohag</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>idea05</h5>
+                        </td>
+                        <td><h5>Sohag</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>idea09</h5>
+                        </td>
+                        <td><h5>Sohag</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>sohag</h5>
+                        </td>
+                        <td><h5>Sohag Sheik</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>idea99</h5>
+                        </td>
+                        <td><h5>Tapon</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>idea50</h5>
+                        </td>
+                        <td><h5>Sohag</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>Raju</h5>
+                        </td>
+                        <td><h5>Sohag</h5></td>
+                        <td class="people">
+                            <img src="/img/sohag.png">
+                            <div class="people-des">
+                                <h5>01922026932</h5>
+                                <p>27/5, Segunbagicha</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Segunbagicha</h5>
+                        </td>
+                        <td class="role">
+                            <p>40Mbps</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="edit"> <a href="#">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <script src="script.js"></script>
+        </dir>
+
+        <!-- fotter section -->
+        <div class="fotter-end">
+            <div class="social-media">
+
+            </div>
+            <div class="des-ft">
+                <h5>All Right Reserverd</h5>
+                <h6> CopyRight &copy; 2022 and Develop by <span>Sohag</span></h6>
+            </div>
+        </div>
+    </section>
+
+    <!-- jquery section -->
+    <script>
+       $('#menu-btn').click(function(){
+        $('#menu').toggleClass('active');
+       })
+        </script>
+</body>
+</html>
