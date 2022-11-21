@@ -4,6 +4,10 @@
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Playball', cursive;
 font-family: 'Titillium Web', sans-serif; */
+:root{
+    --primari-color:  #e5e7eb;
+    --aside-color: #111827;
+}
 
 *{
     margin: 0;
@@ -14,7 +18,7 @@ font-family: 'Titillium Web', sans-serif; */
 }
 body{
     width: 100%;
-    background: #e5e7eb;
+    background: var(--primari-color);
     position: relative;
     display: flex;
 }
