@@ -7,6 +7,7 @@ font-family: 'Titillium Web', sans-serif; */
 :root{
     --primari-color:  #e5e7eb;
     --aside-color: #111827;
+    --hover-color: #253047;
 }
 
 *{
@@ -23,7 +24,7 @@ body{
     display: flex;
 }
 #menu{
-    background: #111827;
+    background: var(--aside-color);
     width: 300px;
     height: 100%;
     position: fixed;
@@ -51,14 +52,14 @@ body{
     transition: 0.3s ease;
 }
 #menu .item li:hover{
-    background: #253047;
+    background: var(--hover-color);
     cursor: pointer;
     border-radius: 2px;
 }
 
 
 #menu .item li i{
-    color: rgb(66, 225, 234);
+    color: var(--primari-color);
     width: 30px;
     height: 30px;
     font-size: 17px;
@@ -70,7 +71,7 @@ body{
     color: white;
 }
 #menu .item li a{
-    color: rgb(66, 225, 234);
+    color: var(--primari-color);
     text-decoration: none;
     font-weight: 300;
     transition: 0.3s ease;
@@ -147,7 +148,7 @@ body{
 #menu-btn{
     /* margin-right: 12px; */
     display: none;
-    color: #111827;
+    color: var(--aside-color);
     font-size: 30px;
     font-weight: 700;
     cursor: pointer;
@@ -199,7 +200,7 @@ body{
 
 .values .val-box:hover{
     border: none;
-    background: linear-gradient(135deg, #14ffe9, #ffeb3d, #ff00e0);
+    background: #355d5a;
     color: #111827;
 }
 .values .val-box:nth-child(1) i{
