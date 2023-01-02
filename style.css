@@ -310,6 +310,7 @@ tbody tr td{
 }
 
 @media (max-width: 700px){
+    
     #menu{
         width: 270px;
         position: fixed;

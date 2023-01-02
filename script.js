@@ -23,3 +23,16 @@ let searching = function (){
         }
     }
 }
+
+
+
+
+// function hello(){
+//     display = document.getElementById("menu");
+
+//     if(display.style.display === "none"){
+//         display.style.display = "block";
+//     }else{
+//         display.style.display = "none";
+//     }
+// }
